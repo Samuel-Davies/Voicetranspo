@@ -1,0 +1,47 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works</title>
+    <link rel="stylesheet" href="{% static 'styles/how-it-works.css' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="header">
+        <a href="{% url 'account:index'%}">
+            <h1>Voice Transpo</h1>
+        </a> 
+
+        <div>
+
+            <div>
+                <a href="{% url 'account:about_us'%}">
+                    <h4 class="h-works">About Us</h4>
+                </a>
+            </div>
+        </div>
+
+    </div> 
+
+
+    <!-- How It Works -->
+    <div class="how-works">
+        <h1>How It Works</h1>
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- <video src="{% static '/videos/voiceTranspo-how-to.MOV' %}" width="100%" autoplay>
+        </video> -->
+        <iframe  src="https://www.youtube.com/embed/mdNhP3TkRPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <p>&copy;Powered by StackDevs</p>
+      </div>
+</body>
+</html>`

@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Transpo | Get Started</title>
+    <link rel="stylesheet" href="{% static 'styles/index.css' %}">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="header">
+        <a href="#">
+            <h1>Voice Transpo</h1>
+        </a> 
+
+        <div>
+            <a href="{% url 'account:how_it_works' %}">
+                <h4 class="h-works">How It Works</h4>
+            </a>
+
+            <div>
+                <a href="{% url 'account:about_us' %}">
+                    <h4 class="h-works">About Us</h4>
+                </a>
+            </div>
+        </div>
+
+    </div> 
+
+    <!-- hero text -->
+    <div class="hero-text">
+        <h1>Voice Transpo</h1>
+        <p>
+            Public transportation is one of the major ways most people move from one place to another. From early morning commutes to work or school, or to meet up for events, a large number of any population depends on public transportation.
+
+        </p>
+        <a href="{% url 'account:login' %}">
+            <button>Get Started</button>
+        </a>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <p>&copy;Powered by StackDevs</p>
+      </div>
+</body>
+</html>

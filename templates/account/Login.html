@@ -1,0 +1,75 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Transpo | Get Started</title>
+    <link rel="stylesheet" href="{%static 'styles/login.css'%}">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="header">
+        <a href="{% url 'account:index' %}">
+            <h1>Voice Transpo</h1>
+        </a> 
+
+        <div>
+            <a href="{% url 'account:how_it_works' %}">
+                <h4 class="h-works">How It Works</h4>
+            </a>
+
+            <div>
+                <a href="{% url 'account:about_us' %}">
+                    <h4 class="h-works">About Us</h4>
+                </a>
+            </div>
+        </div>
+
+    </div> 
+
+    <!-- hero text -->
+    <div class="hero-text">
+        <h1>Welcome To Voice Transpo</h1>
+       
+
+    <!-- Forms -->
+        <div class="forms-container">
+            <form action="login" method="post">
+                {% csrf_token%}
+                <p id="email-para">Username</p><label for="username" ><input type="text" required class="input-pos" name="username"></label><br>
+
+                <p id="pass-para">Password</p><label for="password" class="passwords">
+                <input type="password" required class="input-pos" name="password"></label><br>
+
+                <div class="already-exist">
+                    {% for message in messages%}
+                        <p>
+                            {{message}}
+                        </p>
+                    {% endfor %}
+                </div>
+
+                <input type="submit" value="Log In" class="sub-btn" style="cursor: pointer;">
+
+                    <p>Not a member? 
+                        <a href="{% url 'account:signup' %}">Sign Up</a>
+                    </p>
+            </form>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <p>&copy;Powered by StackDevs</p>
+      </div>
+</body>
+</html>

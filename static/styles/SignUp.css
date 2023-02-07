@@ -1,0 +1,158 @@
+body{
+  margin: 0px;
+  background-color: #E7E7E7;
+  font-family: sans-serif;
+}
+
+p{
+  font-size: 14px;
+
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  padding: 5px 20px;
+}
+
+.header h1 {
+  color: #232323;
+  font-size: 20px;
+  margin: 5px 0px;
+
+}
+
+h4.h-works{
+  background-color: #D7D7D7;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 12px;
+}
+
+.header div {
+  display: flex;
+  align-items: center;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+h4 {
+  margin: 0 30px;
+  color: #232323;
+}
+
+
+/* sign Up */
+
+/* .flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+} */
+input{
+  border-radius: 2px;
+  border: none;
+  height: 25px; 
+}
+h5{
+  text-align: center;
+  border-bottom: 1px solid rgb(207, 202, 202);
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  width: 27.5%;
+  margin-left: 35%;
+  border-width: 1px; 
+}
+
+h5 span{
+  padding: 0 10px;
+  background: #E7E7E7;
+  
+}
+.flex-container .Sign-Up .Names{
+  display: flex;
+}
+
+.flex-container{
+  width: 100%; 
+   
+}
+
+.flex-container .create{  
+  margin-top: 5%;
+  border: none;
+}
+
+.flex-container .create input{
+ /* margin-left: 35%; */
+ width: 73.7%;
+ height: 25px;
+ background-color: #5048E5;
+ color: white;
+ border: none;
+ border-radius: 3px;
+}
+
+.flex-container .Sign-Up{
+  margin-left: 35%;
+  width: 37%;
+}
+#LastName{
+  margin-left: 11%;
+}
+
+.Title h1{
+  text-align: center;
+}
+
+.check-container{
+  display: flex;
+  margin-top: 20px;
+}
+
+.check-container .agreement{
+  margin-top:8px;
+  margin-left: 3px;
+}
+
+.already-exist{
+  margin-top: 20px;
+  padding-bottom: 4px;
+  width: 73%;
+  border-radius: 10px;
+  text-align: center;
+  color: red;
+}
+
+.Sign-Up p{
+  margin-bottom: 2px;
+}
+
+
+
+
+
+/* footer */
+
+.footer {
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  color: #232323;
+  text-align: right;
+}
+
+.footer p{
+  margin-right: 45px;
+}
+
+
+

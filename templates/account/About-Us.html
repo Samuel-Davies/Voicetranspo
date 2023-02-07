@@ -1,0 +1,142 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'styles/about-us.css'%}">
+</head>
+<body>
+      <!-- Navbar -->
+      <div class="header">
+        <a href="{% url 'account:index'%}">
+            <h1>Voice Transpo</h1>
+        </a> 
+
+        <div>
+            <a href="{% url 'account:how_it_works' %}">
+                <h4 class="h-works">How It Works</h4>
+            </a>
+        </div>
+    </div> 
+
+
+    <!-- section 1 -->
+
+    <div class="section-1">
+        <h1>About us</h1>
+        <div class="members">
+            <h3>Members</h3>
+            <p>
+                    Public transportation is one of the major ways most people move from one place to another. From early morning commutes to work or school, or to meet up for events, a large number of any population depends on public transportation.a large number of any population depends on public transportation.a large number of any population depends on public transportation.a large number of any population depends on public 
+            </p>
+        </div>
+    </div>
+
+    <!-- cards -->
+    <div class="container">
+        <div class="card1 row1">
+
+            <div class="avatar">
+                <img src="{% static 'images/davies.jpg'%}" alt="">
+            </div>
+            <div class="details">
+                <h2>Davies Samuel</h2>
+                <p>rockydavies21@gmail.com</p>
+
+                <div class="card-btn">
+                    <a href="https://www.linkedin.com/in/samuel-davies-yoursjunior/">LinkedIn</a>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="card1 row1">
+
+            <div class="avatar">
+                <img src="{% static 'images/calvin.jpg'%}" alt="">
+            </div>
+            <div class="details">
+                <h2>Calvin Tettey</h2>
+                <p>tetteycalvin@gmail.com</p>
+
+                <div class="card-btn">
+                    <a href="https://www.linkedin.com/in/calvintettey/">LinkedIn</a>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="card1 row2">
+
+            <div class="avatar">
+                <img src="{% static 'images/prince.jpg'%}" alt="">
+            </div>
+            <div class="details">
+                <h2>Prince Bioh</h2>
+                <p>princebioh15@gmail.com</p>
+
+                <div class="card-btn">
+                    <a href="https://www.linkedin.com/in/prince-bioh-0596b5234/">LinkedIn</a>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="card1 row2">
+
+            <div class="avatar">
+                <img src="{% static 'images/sly.jpg'%}" alt="">
+            </div>
+            <div class="details">
+                <h2>Sylvanus Lamptey</h2>
+                <p>lampteysylvanus09@gmail.com</p>
+
+                <div class="card-btn">
+                    <a href="https://www.linkedin.com/in/sylvanus-lamptey-91926a249/">LinkedIn</a>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="card1 row2">
+
+            <div class="avatar">
+                <img src="{% static 'images/collins.jpg'%}" alt="">
+            </div>
+            <div class="details">
+                <h2>Collins Huvison</h2>
+                <p>huvisoncollins@gmail.com</p>
+
+                <div class="card-btn">
+                    <a href="https://www.linkedin.com/in/collins-huvison-11524b243/">LinkedIn</a>
+                </div>
+            </div>
+              
+        </div>
+
+        <div class="card1 row2">
+
+            <div class="avatar">
+                <img src="{% static 'images/vivian.jpg'%}" alt="">
+            </div>
+            <div class="details">
+                <h2>Vivian Mensah</h2>
+                <p>refugemensah2000@gmail.com</p>
+
+                <div class="card-btn">
+                    <a href="https://www.linkedin.com/in/vivian-mensah-7a986a179/">LinkedIn</a>
+                </div>
+            </div>
+              
+        </div>
+    </div>
+     <!-- footer -->
+     <div class="footer">
+        <p>&copy;Powered by StackDevs</p>
+      </div>
+
+</body>
+</html>

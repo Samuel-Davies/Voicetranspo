@@ -1,0 +1,124 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Transpo | Get Started</title>
+    <link rel="stylesheet" href="{%static 'styles/SignUp.css'%}">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="header">
+        <a href="{% url 'account:index' %}">
+            <h1>Voice Transpo</h1>
+        </a> 
+
+        <div>
+            <a href="{% url 'account:how_it_works' %}">
+                <h4 class="h-works">How It Works</h4>
+            </a>
+
+            <div>
+                <a href="{% url 'account:about_us' %}">
+                    <h4 class="h-works">About Us</h4>
+                </a>
+            </div>
+        </div>
+
+    </div> 
+  <!-- section 1 -->
+        <div class="Title">
+            <h1>Create a Voice Transpo Account </h1>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <form action="signup" method="post">
+            {% csrf_token%}
+            <h5><span>Sign Up</span></h5>
+
+            <div class="Sign-Up">
+                <div class="Names">
+                    
+                    <div>
+                        <label for="fName"><p>First name</p></label>
+                        <input type="text" placeholder="Enter First Name" name="first_name" required>
+                    </div>
+                    
+                    <div id="LastName">
+                        <label for="lName"><p>Last Name</p></label>
+                        <input type="text" placeholder="Enter Last Name" name="last_name" required>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="uName"><p>Username</p></label>
+                    <input type="text" placeholder="Enter Username" name="username" required style="width: 73%;">
+                </div>
+
+                <div> 
+                    <label for="eAddress"><p>Email Address</p></label>
+                    <input type="text" placeholder="Enter Email" name="email" required style="width: 73%;">
+                </div>
+
+                <div> 
+                    <label for="password"><p>Password</p></label>
+                    <input type="password" placeholder="Enter Password" name="password1" required style="width: 73%;">
+                </div>
+
+                <div>  
+                    <label for="cPassword"><p>Confirm Password</p></label>
+                    <input type="password" placeholder="Enter Password" name="password2" required style="width: 73%;">
+                </div>
+              
+                <div class="already-exist">
+                    {% for message in messages%}
+                        <p>
+                            {{message}}
+                        </p>
+                    {% endfor %}
+                </div>
+            
+                <div class="create">
+                    <input type="submit" value="create an account"class="createbtn" style="cursor: pointer;">
+                </div>
+
+                <label>
+                    <div class="check-container">
+                        <div>
+                            <input type="checkbox" name="agreement" id="checkAgree" required = true >
+                        </div>                       
+                        
+                        <div class="agreement">
+                            I agree to the <a href="" style="color: #5048E5; text-decoration: none;">Terms of service</a>  and <a href="" style="color: #5048E5; text-decoration: none;">Privacy Policy.</a>
+                        </div>
+
+                    </div>
+                    
+                </label>
+
+                <p>Already a member? <a class="already-member" href="{% url 'account:login' %}" style="color: #5048E5; text-decoration: none;">Sign In</a></p>
+
+            </div>
+            <!-- style="background-color: rgba(0,110, 255, 0.877); color: white; border: none; width: 74%; height: 100%;" -->
+
+            
+
+            
+
+            
+            
+          </form>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <p>&copy;Powered by StackDevs</p>
+      </div>
+
+</body>
+</html>
+
