@@ -21,3 +21,7 @@ Voice based transport Enquiry System
 ## Dashboard
 
 ![Screen Shot 2023-02-08 at 4 35 38 PM](https://user-images.githubusercontent.com/89774309/217598342-7d5016fc-a865-4d4a-b8f8-eefd335b07fc.png)
+
+## Result Set
+
+![Screen Shot 2023-02-08 at 4 37 21 PM](https://user-images.githubusercontent.com/89774309/217599009-ffb30a4c-698a-4116-9fda-6ba2b6700858.png)
