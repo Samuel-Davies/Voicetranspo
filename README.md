@@ -10,6 +10,10 @@ Voice based transport Enquiry System
 
 ![Screen Shot 2023-02-08 at 4 33 00 PM](https://user-images.githubusercontent.com/89774309/217597268-c1e5aa11-953a-4c57-be86-4a96361afd4a.png)
 
+## How it works
+
+![Screen Shot 2023-02-09 at 8 50 37 AM](https://user-images.githubusercontent.com/89774309/217763287-6b8bf266-8a65-4a49-a6af-fd2cb57ddcf1.png)
+
 ## Login
 
 ![Screen Shot 2023-02-08 at 4 33 30 PM](https://user-images.githubusercontent.com/89774309/217596772-f99e7a2f-f40f-431f-8823-2fe53a319ce5.png)
